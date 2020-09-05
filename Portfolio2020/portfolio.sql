@@ -187,6 +187,11 @@ INSERT INTO visitor
 (visitor_name, visitor_email, visitor_msg, visit_date, employeeID)
 VALUES
 	('Leo', 'leo@me.com', 'test', NOW(), 1);
+use tfportfolio;
+GRANT SELECT, INSERT, UPDATE
+ON tfportfolio.*
+TO tf_user
+IDENTIFIED by 'Pa$$w0rd';
 
 
 
