@@ -2,11 +2,11 @@
 <! ----------------------------------------------------------------------------------------------------------------
 --
 #Original Author: Tabatha Foes                                    
-#Date Created: 2/20/2020                    
-#Version:  2.0                                                  
-#Date Last Modified: 4/10/2020                              
+#Date Created: 9/4/2020                    
+#Version:  1.0                                                  
+#Date Last Modified: 9/4/2020                              
 #Modified by: Tabatha Foes                                          
-#Modification log:     2/21/2020 -- Created PHP for thank you page
+#Modification log:     9/4/20 -- Created PHP for thank you page
  --
 ------------------------------------------------------------------------------------------------------------------>
 <?php
