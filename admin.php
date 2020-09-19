@@ -3,14 +3,19 @@
 --
 #Original Author: Tabatha Foes                                    
 #Date Created: 9/11/2020                    
-#Version:  1.0                                                  
+#Version:  2.0                                                  
 #Date Last Modified: 9/11/2020                              
 #Modified by: Tabatha Foes                                          
 #Modification log:     9/11/2020 -- Created PHP for admin
+                 9/18/2020 -- Reconstructed entire project; CSS now runs properly
  --
 ------------------------------------------------------------------------------------------------------------------>
 <?php
-    require_once('database.php');
+    require_once('./model/database.php');
+    require_once('./model/employee.php');
+    require_once('./model/visitor.php');
+    
+    
     //echo "Connectuin ok";
     
     // Get category ID
@@ -22,26 +27,24 @@ if (!isset($empID)) {
     }
 }
 // Get all employee
-$query = 'SELECT * FROM employee
-                       ORDER BY employeeID';
-$statement = $db->prepare($query);
-$statement->execute();
-$employees = $statement->fetchAll();
-$statement->closeCursor();
+//$query = 'SELECT * FROM employee
+//                       ORDER BY employeeID';
+//$statement = $db->prepare($query);
+//$statement->execute();
+//$employees = $statement->fetchAll();
+//$statement->closeCursor();
+$employees = getEmployees();
 
 // Get visitors for employee
-$queryVisitors = 'SELECT * FROM visitor
-                  WHERE employeeID = :employeeID
-                  ORDER BY visitor_id';
-$statement3 = $db->prepare($queryVisitors);
-$statement3->bindValue(':employeeID', $empID);
-$statement3->execute();
-$visitors = $statement3->fetchAll();
-$statement3->closeCursor();
-
-
-  
-
+//$queryVisitors = 'SELECT * FROM visitor
+//                  WHERE employeeID = :employeeID
+//                  ORDER BY visitor_id';
+//$statement3 = $db->prepare($queryVisitors);
+//$statement3->bindValue(':employeeID', $empID);
+//$statement3->execute();
+//$visitors = $statement3->fetchAll();
+//$statement3->closeCursor();
+$visitors = getVisitorByEmp($empID);
 
 ?>
 
@@ -50,7 +53,7 @@ $statement3->closeCursor();
 <html lang="en">
 <head>
 <style>
-<?php include 'nbproject/assets/bootstrap/css/bootstrap.min.css'; ?>
+<?php include 'css\bootstrap.min.css'; ?>
 </style>
   <title>Admin</title>
 </head>
@@ -64,6 +67,7 @@ $statement3->closeCursor();
                     <li class="nav-item" role="presentation"><a class="nav-link" href="projects-grid-cards.html">Projects</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="about.html">About</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="hire-me.html">Contact</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="admin.php">Admin</a></li>
                 </ul>
             </div>
         </div>

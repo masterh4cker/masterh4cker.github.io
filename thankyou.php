@@ -7,6 +7,8 @@
 #Date Last Modified: 9/4/2020                              
 #Modified by: Tabatha Foes                                          
 #Modification log:     9/4/20 -- Created PHP for thank you page
+9/18/2020 -- Reconstructed entire project; CSS now runs properly
+
  --
 ------------------------------------------------------------------------------------------------------------------>
 <?php
@@ -25,32 +27,35 @@
         echo "Form Data Error: " . $error; 
         exit();
         } else {
-            $dsn = 'mysql:host=localhost;dbname=tfportfolio';
-            $username = 'tf_user';
-            $password = 'Pa$$w0rd';
-
-            try {
-                $db = new PDO($dsn, $username, $password);
-
-            } catch (PDOException $e) {
-                $error_message = $e->getMessage();
-                /* include('database_error.php'); */
-                echo "DB Error: " . $error_message; 
-                exit();
-            }
+//            $dsn = 'mysql:host=localhost;dbname=tfportfolio';
+//            $username = 'tf_user';
+//            $password = 'Pa$$w0rd';
+//
+//            try {
+//                $db = new PDO($dsn, $username, $password);
+//
+//            } catch (PDOException $e) {
+//                $error_message = $e->getMessage();
+//                /* include('database_error.php'); */
+//                echo "DB Error: " . $error_message; 
+//                exit();
+//            }
+            require_once('./model/database.php');
+            require_once('./model/visitor.php');
 
             // Add the product to the database  
-            $query = 'INSERT INTO visitor
-                         (visitor_name, visitor_email, visitor_msg, visit_date, employeeID)
-                      VALUES
-                         (:visitor_name, :visitor_email, :visitor_msg, NOW(), 1)';
-            $statement = $db->prepare($query);
-            $statement->bindValue(':visitor_name', $visitor_name);
-            $statement->bindValue(':visitor_email', $visitor_email);
-            $statement->bindValue(':visitor_msg', $visitor_msg);
-            $statement->execute();
-            $statement->closeCursor();
+//            $query = 'INSERT INTO visitor
+//                         (visitor_name, visitor_email, visitor_msg, visit_date, employeeID)
+//                      VALUES
+//                         (:visitor_name, :visitor_email, :visitor_msg, NOW(), 1)';
+//            $statement = $db->prepare($query);
+//            $statement->bindValue(':visitor_name', $visitor_name);
+//            $statement->bindValue(':visitor_email', $visitor_email);
+//            $statement->bindValue(':visitor_msg', $visitor_msg);
+//            $statement->execute();
+//            $statement->closeCursor();
             /* echo "Fields: " . $visitor_name . $visitor_email . $visitor_msg; */
+            addVisitor($visitor_name, $visitor_email, $visitor_msg);
 
 }
 
@@ -62,7 +67,7 @@
 <html lang="en">
 <head>
  <style>
-<?php include 'assets/bootstrap/css/bootstrap.min.css'; ?>
+<?php include 'css/bootstrap.min.css'; ?>
 </style>
   <title>Thank You</title>
 </head>
@@ -76,6 +81,7 @@
                     <li class="nav-item" role="presentation"><a class="nav-link" href="projects-grid-cards.html">Projects</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="about.html">About</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="hire-me.html">Contact</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="admin.php">Admin</a></li>
                 </ul>
             </div>
         </div>

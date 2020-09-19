@@ -7,6 +7,7 @@
 #Date Last Modified: 9/11/2020                              
 #Modified by: Tabatha Foes                                          
 #Modification log:     9/11/2020 -- Created PHP for database error
+9/18/2020 -- Reconstructed entire project; CSS now runs properly
  --
 ------------------------------------------------------------------------------------------------------------------>
 <?php
@@ -62,7 +63,7 @@
 <html lang="en">
 <head>
  <style>
-<?php include 'assets/bootstrap/css/bootstrap.min.css'; ?>
+<?php include 'css/bootstrap.min.css'; ?>
 </style>
   <title>Thank You</title>
 </head>
@@ -76,6 +77,7 @@
                     <li class="nav-item" role="presentation"><a class="nav-link" href="projects-grid-cards.html">Projects</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="about.html">About</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="hire-me.html">Contact</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="admin.php">Admin</a></li>
                 </ul>
             </div>
         </div>
