@@ -1,3 +1,13 @@
+<! ----------------------------------------------------------------------------------------------------------------
+--
+#Original Author: Tabatha Foes                                    
+#Date Created: 9/24/2020                    
+#Version:  1.0                                                  
+#Date Last Modified: 9/24/2020                              
+#Modified by: Tabatha Foes                                          
+#Modification log:     
+                    9/24/20 -- Created constructor
+------------------------------------------------------------------------------------------------------------------>
 <?php
 function add_admin($email, $password) {
     //global $db;

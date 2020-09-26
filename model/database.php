@@ -6,7 +6,9 @@
 #Date Last Modified: 9/11/2020                              
 #Modified by: Tabatha Foes                                          
 #Modification log:     9/11/2020 -- Created PHP for database
- --
+                       9/24/20 -- created constructors 
+
+
 ------------------------------------------------------------------------------------------------------------------>
 <?php
 class Database {

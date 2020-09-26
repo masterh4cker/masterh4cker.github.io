@@ -8,6 +8,7 @@
 #Modified by: Tabatha Foes                                          
 #Modification log:     9/11/2020 -- Created PHP for database error
 9/18/2020 -- Reconstructed entire project; CSS now runs properly
+9/24/20 -- created constructor
  --
 ------------------------------------------------------------------------------------------------------------------>
 <?php
