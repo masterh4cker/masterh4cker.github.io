@@ -11,6 +11,9 @@
  --
 ------------------------------------------------------------------------------------------------------------------>
 <?php
+    require_once('util/secure_conn.php');
+    require_once('util/valid_admin.php');
+
     require_once('./model/database.php');
     require_once('./model/employee.php');
     require_once('./model/visitor.php');

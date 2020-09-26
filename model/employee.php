@@ -12,7 +12,8 @@
 ------------------------------------------------------------------------------------------------------------------>
 <?php
 function getEmployees(){
-    global $db;
+    //global $db;
+ $db = Database::getDB();
 $query = 'SELECT * FROM employee
                        ORDER BY employeeID';
 $statement = $db->prepare($query);
