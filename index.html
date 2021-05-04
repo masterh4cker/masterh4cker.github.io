@@ -1,130 +1,123 @@
-<! ----------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------
 --
-#Original Author: Tabatha Foes                                    
-#Date Created: 2/20/2020                    
-#Version:  2.0                                                  
-#Date Last Modified: 9/18/2020                              
-#Modified by: Tabatha Foes                                          
-#Modification log:     8/28/2020 -- Created Home Page with Nav Bar and content on main page
-                       9/18/2020 -- Reconstructed entire project; CSS now runs properly
- --
+#Original Author: Tabatha Foes
+#Date Created: 02/28/20
+#Version: 1
+#Date Last Modified: 
+#Modified by: Tabatha Foes
+#Modification log: Created entire parallax website. 
 ------------------------------------------------------------------------------------------------------------------>
 <!DOCTYPE html>
 <html>
-
 <head>
+    <title>The Universe</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Home - Brand</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
-    <link rel="stylesheet" href="fonts/ionicons.min.css">
-    <link rel="stylesheet" href="css/Contact-Form-Clean.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/5b71db4064dce81c008b4fa2.jfif" type="image/gif" sizes="16x16">
 </head>
 
 <body>
-    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient">
-        <div class="container"><a class="navbar-brand logo" href="#">Tabatha Foes</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse"
-                id="navbarNav">
-                <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="index.html">Home</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="projects-grid-cards.html">Projects</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="hire-me.html">Contact</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="admin.php">Admin</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <main class="page lanidng-page">
-        <section class="portfolio-block block-intro">
-            <div class="container">
-                <div class="avatar" style="background-image:url(&quot;img/avatars/IMG-0725.jpg&quot;);"></div>
-                        </div>
-                <div class="about-me">
-                    <p>Welcome! I am <strong>Tabatha Foes</strong>. I am a software developer.</p><a class="btn btn-outline-primary" role="button" href="about.html">Learn more!</a></div>
-        </section>
-        <section class="portfolio-block photography">
-            <div class="container">
-                <div class="row no-gutters">
-                    <div class="col-md-6 col-lg-4 item zoom-on-hover"><a href="#"><img class="img-fluid image" src="img/javascript.png"></a></div>
-                    <div class="col-md-6 col-lg-4 item zoom-on-hover"><a href="#"><img class="img-fluid image" src="img/boot.png"></a></div>
-                    <div class="col-md-6 col-lg-4 item zoom-on-hover"><a href="#"><img class="img-fluid image" src="img/html2.png"></a></div>
-                </div>
-            </div>
-        </section>
-        <section class="portfolio-block call-to-action border-bottom">
-            <div class="container">
-                <div class="d-flex justify-content-center align-items-center content"></div>
-            </div>
-        </section>
-        <section class="portfolio-block skills">
-            <div class="container">
-                <div class="heading">
-                    <h2>Special Skills</h2>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="card special-skill-item border-0">
-                            <div class="card-header bg-transparent border-0"><i class="icon ion-ios-star-outline"></i></div>
-                            <div class="card-body">
-                                <h3 class="card-title">Web Design</h3>
-                                <p class="card-text">Well designed websites.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card special-skill-item border-0">
-                            <div class="card-header bg-transparent border-0"><i class="icon ion-ios-lightbulb-outline"></i></div>
-                            <div class="card-body">
-                                <h3 class="card-title">Creative Apps</h3>
-                                <p class="card-text">Need an app? Contact me for more info!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card special-skill-item border-0">
-                            <div class="card-header bg-transparent border-0"><i class="icon ion-ios-gear-outline"></i></div>
-                            <div class="card-body">
-                                <h3 class="card-title">Maintenance</h3>
-                                <p class="card-text">Looking for a website that is also maintained? Look no further!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <section class="portfolio-block website gradient">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-12 col-lg-5 offset-lg-1 text">
-                    <h3>Website Project</h3>
-                    <p>If you are interested in seeing some of my website projects go to the projects tab.</p>
-                </div>
-                <div class="col-md-12 col-lg-5">
-                    <div class="portfolio-laptop-mockup">
-                        <div class="screen">
-                            <div class="screen-content" style="background-image:url(&quot;img/tech/image6.png&quot;);"></div>
-                        </div>
-                        <div class="keyboard"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer class="page-footer">
-        <div class="container">
-            <div class="links"><a href="#">About me</a><a href="#">Contact me</a><a href="#">Projects</a></div>
-            <div class="social-icons"><a href="https://www.linkedin.com/in/tabatha-foes-62a4a2195/"><i class="icon ion-social-linkedin"></i></a><a href="https://github.com/masterh4cker"><i class="icon ion-social-github-outline"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a></div>
-        </div>
-    </footer>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
-    <script src="js/theme.js"></script>
-</body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#galaxy">The galaxy</a></li>
+          <li><a href="#far">How Far</a></li>
+          <li><a href="#moon">Moon</a></li>
+        <li><a href="#spacecraft">Spacecraft</a></li>
+        <li><a href="#ufo">UFO</a></li>
 
+      </ul>
+      <form class="navbar-form navbar-right" role="search">
+        <div class="form-group input-group">
+          <input type="text" class="form-control" placeholder="Search..">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">
+              <span class="glyphicon glyphicon-search"></span>
+            </button>
+          </span>        
+        </div>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> My Account</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="parallax1">
+<div class="heading">
+    THE UNIVERSE
+    </div>    
+</div>
+<section id="galaxy">
+<h1>The galaxy</h1>    
+
+    <div class="two-col">
+    <p>A galaxy is a huge collection of gas, dust, and billions of stars and their solar systems. A galaxy is held together by gravity. Our galaxy, the Milky Way, also has a supermassive black hole in the middle. ... Some scientists think there could be as many as one hundred billion galaxies in the universe.</p>
+    </div>
+    <div class="two-col">
+    <p>Before the 20th century, we didn't know that galaxies other than the Milky Way existed; earlier astronomers had classified them as as “nebulae,” since they looked like fuzzy clouds. But in the 1920s, astronomer Edwin Hubble showed that the Andromeda “nebula” was a galaxy in its own right. Since it is so far from us, it takes light from Andromeda more than 2.5 million years to bridge the gap.</p>
+    </div>
+</section>    
+ <div class="parallax2">
+    <div class="heading-sm">
+     </div>
+    </div>   
+      <section id="far" class="dark">
+    <h3>How Far Is It?</h3>
+    <p>The shortest distance between Earth and space is about 62 miles (100 kilometers) straight up, which by general accord is where the planet's boundary ends and suborbital space begins</p>
+    </section>  
+    
+    <div class="parallax3">
+    </div>
+    
+    <div id="moon" class="dark">
+    <h3>The Moon</h3>
+        <div class="two-col">
+        <p>Earth's moon is the brightest object in our night sky and the closest celestial body. Its presence and proximity play a huge role in making life possible here on Earth. The moon's gravitational pull stabilizes Earth's wobble on its axis, leading to a stable climate.</p>
+        </div>
+        <div class="two-col">
+       <p>Earth's moon is the brightest object in our night sky and the closest celestial body. Its presence and proximity play a huge role in making life possible here on Earth. The moon's gravitational pull stabilizes Earth's wobble on its axis, leading to a stable climate.</p>
+    </div>
+    </div>
+    <div class="parallax4">
+    </div>
+    <div id="spacecraft" class="dark">
+    <h3>Spacecraft</h3>
+        <div class="two-col">
+        <p>A spacecraft is a vehicle or machine designed to fly in outer space. A type of artificial satellite, spacecraft are used for a variety of purposes, including communications, Earth observation, meteorology, navigation, space colonization, planetary exploration, and transportation of humans and cargo.</p>
+        </div>
+        <div class="two-col">
+       <p>Most spacecraft are not self-propelled; they depend on the initial velocity provided by a launch vehicle, which separates from the spacecraft when its task is done. The spacecraft typically either is placed into an orbit around Earth or, if given sufficient velocity to escape Earth’s gravity, continues toward another destination in space. The spacecraft itself often carries small rocket engines for maneuvering and orienting in space.</p>
+    </div>
+    </div>
+    <div class="parallax5">
+    </div>
+        <div id="ufo" class="dark">
+    <h3>UFO'S</h3>
+        <div class="two-col">
+        <p>In popular culture, the term UFO–or unidentified flying object–refers to a suspected alien spacecraft, although its definition encompasses any unexplained aerial phenomena. UFO sightings have been reported throughout recorded history and in various parts of the world, raising questions about life on other planets and whether extraterrestrials have visited Earth.</p>
+        </div>
+        <div class="two-col">
+       <p>The first well-known UFO sighting occurred in 1947, when businessman Kenneth Arnold claimed to see a group of nine high-speed objects near Mount Rainier in Washington while flying his small plane. Arnold estimated the speed of the crescent-shaped objects as several thousand miles per hour and said they moved “like saucers skipping on water.” In the newspaper report that followed, it was mistakenly stated that the objects were saucer-shaped, hence the term flying saucer.</p>
+    </div>
+    </div>
+    <div class="parallax6">
+    </div>
+    
+    
+    
+</body>
 </html>
